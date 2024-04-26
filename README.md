@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://blog-preview-kkxlr67nh-muhaideen-nausars-projects.vercel.app/)
+- Live Site URL: [Click Here](https://blog-preview-kkxlr67nh-muhaideen-nausars-projects.vercel.app/)
 ## My process
 
 ### Built with
