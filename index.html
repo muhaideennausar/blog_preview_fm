@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Preview</title>
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --yellow: hsl(47, 88%, 63%);
+      --grey: hsl(0, 0%, 50%);
+      --white: hsl(0, 0%, 100%);
+      --black: hsl(0, 0%, 7%);
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+      font-style: 16px;
+      color: var(--black);
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      background-color: var(--yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      width: 400px;
+      height: 550px;
+      padding: 25px;
+      background-color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 20px;
+      border: solid black 1px;
+      box-shadow: 8px 8px 0 var(--black);
+      transition: box-shadow .3s ease-in-out;
+    }
+    .container:hover{
+      box-shadow: 16px 16px var(--black);
+    }
+    .blog-banner{
+      width: 100%;
+      border-radius: 13px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .content-category{
+      background-color: var(--yellow);
+      width: fit-content;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: 800;
+    }
+    .content-author{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 12px;
+    }
+    .author-profile{
+      width: 32px;
+    }
+    .author-name{
+      font-size: .9em;
+      font-weight: 800;
+    }
+    .content-title:hover{
+      color: var(--yellow);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="assets/images/illustration-article.svg" alt="Article Illustration" class="blog-banner">
+    <div class="content">
+      <p class="content-category">Learning</p>
+      <p class="content-published" style="font-size: .9em;font-weight: 600;">Published 21 Dec 2023</p>
+      <h2 class="content-title" style="font-weight: 800;transition: color .2s ease-in-out;">HTML & CSS foundations</h2>
+      <p class="content-description" style="color: var(--grey);">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+    <div class="content-author">
+      <img src="assets/images/image-avatar.webp" alt="Author Greg Hooper" class="author-profile">
+      <p class="author-name">Greg Hooper</p>
+    </div>
+  </div>
+</body>
+</html>
